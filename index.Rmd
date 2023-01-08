@@ -1,0 +1,111 @@
+---
+title: <span style="color:#034a94"> **Actividad 1**</span>
+output:
+html_document:
+css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+library(summarytools)
+
+
+c1 ="#FF7F00"  # naranja - color primario 
+c2 ="#034A94"  # azul oscuro - color secundario
+c3 ="#0EB0C6"  # azul claro - color terciario
+c4 ="#686868"  # gris - color texto
+```
+
+</br></br>
+
+# <span style="color:#034a94">**Creación de tablero**</span> 
+
+
+Me diante este paquete   `flexdashboard` se pueden construir tableros en formato html que se podrán colocar en github para visualización de los resultados de una investigación o estudio de datos
+
+Con el fin de visualizar los resultados de los pasos se utiliza la data `CarreraLaLuz2022` contenida en `paqueteMET` se describen los siguientes pasos utilizado el lenguaje Rmardown con algunos cambios adicionales
+
+
+</br></br>
+
+## <span style="color:#FF7F00"> **Paso 1 :**</span>
+
+### <span style="color:#034a94">**Descargar e instalar los paquetes requeridos**</span>  
+
+<pre>
+install.packages("devtools")  # instala paquete devtools
+devtools::install_github("dgonxalex80/paqueteMET") # descarga de paqueteMET
+library(paqueteMET)     # activar paqueteMET
+
+data("CarreraLuz22")    # cargar la dataset
+
+install.packages("remotes")  
+remotes::install_github("rstudio/bslib")  # descarga paquete que contiene formato    
+</pre>
+
+
+</br></br>
+
+## <span style="color:#FF7F00"> **Paso 2 :**</span>
+
+### <span style="color:#034a94">**Creación de la plantilla del tablero**</span> 
+
+<pre>
+
+File / New File / R Markdown...     
+From Template  / Flex Dashboard themed with {bslib}
+
+</pre>
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/tablero1.png")
+```
+
+## <span style="color:#FF7F00"> **Paso 3 :**</span>
+
+### <span style="color:#034a94">**Ajuste del formato**</span> 
+
+El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores
+También se puede cambiar la orientación del tablero de columnas por defecto  a filas y ajustar los títulos 
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/tablero3.png")
+```
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/tablero5.png")
+```
+
+</br></br>
+
+## <span style="color:#FF7F00"> **Paso 4 :**</span>
+
+### <span style="color:#034a94">**Incorporación de los elementos al tablero**</span>
+
+Se pueden agregar los gráficos en los bloque preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes
+
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/tableroZ.png")
+```
+
+
+[formtato completo]()
+
+</br></br>
+
+## <span style="color:#FF7F00"> **Paso 2 :**</span>
+
+### <span style="color:#034a94">**Publicación**</span>
+
+#### **Para su publicación es necesario** 
+
+* Tener una cuenta abierta en GitHub
+* Tener instalado git en nuestro equipo
+* Crear un repositorio 
+* Clonar el repositorio en nuestro equipo
+* Crear archivo Rmd con formato flexdashboard
+* Renderizarlo el archivo con  **Kinit** (convertirlo en formato html)
+* Subirlo los archivos al repositorio de GitHub
+* Publicar el tablero
+
