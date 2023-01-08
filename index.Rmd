@@ -90,22 +90,24 @@ knitr::include_graphics("img/tableroZ.png")
 ```
 
 
-[formtato completo]()
-
 </br></br>
 
-## <span style="color:#FF7F00"> **Paso 2 :**</span>
+## <span style="color:#FF7F00"> **Paso 5 :**</span>
 
 ### <span style="color:#034a94">**Publicación**</span>
 
 #### **Para su publicación es necesario** 
 
-* Tener una cuenta abierta en GitHub
-* Tener instalado git en nuestro equipo
-* Crear un repositorio 
+* Tener instalado **git** en nuestro equipo
+* Tener una cuenta abierta en **GitHub**
+* Crear un repositorio en **GitHib**
 * Clonar el repositorio en nuestro equipo
-* Crear archivo Rmd con formato flexdashboard
+* Crear archivo **Rmd** con formato flexdashboard (pasis 1 a 4)
 * Renderizarlo el archivo con  **Kinit** (convertirlo en formato html)
-* Subirlo los archivos al repositorio de GitHub
+* Subirlo los archivos al repositorio de GitHub 
+  + git add.
+  + git commit -m "primer commit"
+  + git push
 * Publicar el tablero
+
 
