@@ -21,9 +21,16 @@ c4 ="#686868"  # gris - color texto
 # <span style="color:#034a94">**Creación de tablero**</span> 
 
 
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/tableroZ.png")
+```
+
+
 Me diante este paquete   `flexdashboard` se pueden construir tableros en formato html que se podrán colocar en github para visualización de los resultados de una investigación o estudio de datos
 
-Con el fin de visualizar los resultados de los pasos se utiliza la data `CarreraLaLuz2022` contenida en `paqueteMET` se describen los siguientes pasos utilizado el lenguaje Rmardown con algunos cambios adicionales
+</br>
+
+Con el fin de visualizar los pasos para la construcción de un tablero se utiliza la data `CarreraLaLuz2022` contenida en `paqueteMET` y se describen los siguientes pasos utilizado el lenguaje Rmardown con algunos cambios adicionales
 
 
 </br></br>
@@ -65,8 +72,11 @@ knitr::include_graphics("img/tablero1.png")
 
 ### <span style="color:#034a94">**Ajuste del formato**</span> 
 
-El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores
-También se puede cambiar la orientación del tablero de columnas por defecto  a filas y ajustar los títulos 
+El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores. También se puede cambiar la orientación del tablero de columnas por defecto  a filas y ajustar los títulos
+
+* `Column {data-width=350}`: permite determinar el ancho de la columna
+* `Column {data-width=700 .tabset}`: permite construir páginas adicionales
+* `valueBox(value = variable,caption = "Titlo caja",icon = icono, color = código color)`: permite construir cajas con indicadores  
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("img/tablero3.png")
@@ -96,18 +106,27 @@ knitr::include_graphics("img/tableroZ.png")
 
 ### <span style="color:#034a94">**Publicación**</span>
 
-#### **Para su publicación es necesario** 
+#### **Para su publicación es necesario** :
 
 * Tener instalado **git** en nuestro equipo
+
 * Tener una cuenta abierta en **GitHub**
+
 * Crear un repositorio en **GitHib**
+
 * Clonar el repositorio en nuestro equipo
+
 * Crear archivo **Rmd** con formato flexdashboard (pasis 1 a 4)
+
 * Renderizarlo el archivo con  **Kinit** (convertirlo en formato html)
+
 * Subirlo los archivos al repositorio de GitHub 
-  + git add.
-  + git commit -m "primer commit"
-  + git push
+  + `git add .`
+  + `git commit -m "primer commit"`
+  + `git push`
+  
 * Publicar el tablero
+
+
 
 
