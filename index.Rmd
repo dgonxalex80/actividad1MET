@@ -76,7 +76,7 @@ El formato permite cambiar los colores que por defecto trae la plantilla y ajust
 
 * `Column {data-width=350}`: permite determinar el ancho de la columna
 * `Column {data-width=700 .tabset}`: permite construir páginas adicionales
-* `valueBox(value = variable,caption = "Titlo caja",icon = icono, color = código color)`: permite construir cajas con indicadores  
+* `valueBox(value = variable,caption = "Titulo caja",icon = icono, color = código color)`: permite construir cajas con indicadores  
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("img/tablero3.png")
@@ -106,32 +106,60 @@ knitr::include_graphics("img/tableroZ.png")
 
 ### <span style="color:#034a94">**Publicación**</span>
 
-#### **Para su publicación es necesario** :
+#### Para su publicación es necesario :
+
+</br>
 
 * Tener instalado **git** en nuestro equipo
 
+</br>
+
 * Tener una cuenta abierta en **GitHub**
+
+</br>
 
 * Crear un repositorio en **GitHib**
 
+</br>
+
 * Clonar el repositorio en nuestro equipo
+
+</br>
 
 * Crear archivo **Rmd** con formato flexdashboard (pasis 1 a 4)
 
+</br>
+
 * Renderizarlo el archivo con  **Kinit** (convertirlo en formato html)
 
+</br>
+
 * Subirlo los archivos al repositorio de GitHub 
-  + `git add .`
-  + `git commit -m "primer commit"`
-  + `git push`
-  
++ `git add .`
++ `git commit -m "primer commit"`
++ `git push`
+
+</br>
+
 Estos códigos se pueden ejecutar desde la consola 
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("img/github.png")
 ```
-  
-* Publicar el tablero
+O desde la ventana git de RStudio
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/git.png")
+```  
+
+</br>  
+
+* Publicar el tablero  : Este paso requiere regresar al repositorio de github y en él configurar el repositorio como página web 
+
++ Settings
++ Pages
++ Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html`
+
 
 
 
