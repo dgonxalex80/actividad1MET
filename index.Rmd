@@ -125,6 +125,12 @@ knitr::include_graphics("img/tableroZ.png")
   + `git commit -m "primer commit"`
   + `git push`
   
+Estos códigos se pueden ejecutar desde la consola 
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/github.png")
+```
+  
 * Publicar el tablero
 
 
