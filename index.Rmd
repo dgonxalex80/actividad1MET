@@ -112,32 +112,20 @@ knitr::include_graphics("img/tableroZ.png")
 
 * Tener instalado **git** en nuestro equipo
 
-</br>
-
 * Tener una cuenta abierta en **GitHub**
-
-</br>
 
 * Crear un repositorio en **GitHib**
 
-</br>
-
 * Clonar el repositorio en nuestro equipo
-
-</br>
 
 * Crear archivo **Rmd** con formato flexdashboard (pasis 1 a 4)
 
-</br>
-
 * Renderizarlo el archivo con  **Kinit** (convertirlo en formato html)
 
-</br>
-
 * Subirlo los archivos al repositorio de GitHub 
-+ `git add .`
-+ `git commit -m "primer commit"`
-+ `git push`
+  + `git add .`
+  + `git commit -m "primer commit"`
+  + `git push`
 
 </br>
 
@@ -154,11 +142,11 @@ knitr::include_graphics("img/git.png")
 
 </br>  
 
-* Publicar el tablero  : Este paso requiere regresar al repositorio de github y en él configurar el repositorio como página web 
+* Publicar el tablero  : Este paso requiere regresar al repositorio de github y en él configurar el repositorio como página web: 
 
-+ Settings
-+ Pages
-+ Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html`
+  + Settings
+  + Pages
+  .+ Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html`
 
 
 
