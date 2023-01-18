@@ -26,11 +26,11 @@ knitr::include_graphics("img/tableroZ.png")
 ```
 
 
-Me diante este paquete   `flexdashboard` se pueden construir tableros en formato html que se podrán colocar en github para visualización de los resultados de una investigación o estudio de datos
+Mediante este paquete   `flexdashboard` se pueden construir tableros en formato html que se podrán colocar en github para visualización de los resultados de una investigación o estudio de datos.
 
 </br>
 
-Con el fin de visualizar los pasos para la construcción de un tablero se utiliza la data `CarreraLaLuz2022` contenida en `paqueteMET` y se describen los siguientes pasos utilizado el lenguaje Rmardown con algunos cambios adicionales
+Con el fin de visualizar los pasos para la construcción de un tablero se utiliza la data `CarreraLuz2022` contenida en `paqueteMET` y se describen los siguientes pasos utilizando el lenguaje `Rmardown` con algunos cambios adicionales.
 
 
 </br></br>
@@ -72,7 +72,7 @@ knitr::include_graphics("img/tablero1.png")
 
 ### <span style="color:#034a94">**Ajuste del formato**</span> 
 
-El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores. También se puede cambiar la orientación del tablero de columnas por defecto  a filas y ajustar los títulos
+El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores. También se pueden cambiar; la orientación del tablero de columnas por defecto a filas y ajustar los títulos.
 
 * `Column {data-width=350}`: permite determinar el ancho de la columna
 * `Column {data-width=700 .tabset}`: permite construir páginas adicionales
@@ -92,7 +92,7 @@ knitr::include_graphics("img/tablero5.png")
 
 ### <span style="color:#034a94">**Incorporación de los elementos al tablero**</span>
 
-Se pueden agregar los gráficos en los bloque preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes
+Se pueden agregar los gráficos en los bloques preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes.
 
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
@@ -114,29 +114,36 @@ knitr::include_graphics("img/tableroZ.png")
 
 * Tener una cuenta abierta en **GitHub**
 
-* Crear un repositorio en **GitHib**
+* Crear un repositorio en **GitHub**
 
 * Clonar el repositorio en nuestro equipo
 
-* Crear archivo **Rmd** con formato flexdashboard (pasis 1 a 4)
+* Crear archivo **Rmd** con formato flexdashboard (pasos 1 a 4)
 
-* Renderizarlo el archivo con  **Kinit** (convertirlo en formato html)
+* Renderizar  el archivo con  **Kinit** (convertirlo en formato html)
 
 * Subirlo los archivos al repositorio de GitHub 
+
   + `git add .`
   + `git commit -m "primer commit"`
   + `git push`
 
 </br>
 
-Estos códigos se pueden ejecutar desde la consola 
+Estos códigos se pueden ejecutar desde el Menú de RStudio o desde la ventana git 
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+Termina de RStudio
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
 knitr::include_graphics("img/github.png")
 ```
-O desde la ventana git de RStudio
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+</br>
+
+Ventana git
+ + Commit : marcar los archivos a subir
+ + Escribir el comentario en ventana **Commit message**  
+ + Dar clic en boton **Push**
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
 knitr::include_graphics("img/git.png")
 ```  
 
@@ -144,9 +151,9 @@ knitr::include_graphics("img/git.png")
 
 * Publicar el tablero  : Este paso requiere regresar al repositorio de github y en él configurar el repositorio como página web: 
 
-  + Settings
-  + Pages
-  .+ Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html`
+  * Settings
+  * Pages
+  * Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html`
 
 
 

@@ -267,15 +267,15 @@ $(document).ready(function () {
 <h1><span style="color:#034a94"><strong>Creación de
 tablero</strong></span></h1>
 <p><img src="img/tableroZ.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Me diante este paquete <code>flexdashboard</code> se pueden construir
+<p>Mediante este paquete <code>flexdashboard</code> se pueden construir
 tableros en formato html que se podrán colocar en github para
 visualización de los resultados de una investigación o estudio de
-datos</p>
+datos.</p>
 <p></br></p>
 <p>Con el fin de visualizar los pasos para la construcción de un tablero
-se utiliza la data <code>CarreraLaLuz2022</code> contenida en
-<code>paqueteMET</code> y se describen los siguientes pasos utilizado el
-lenguaje Rmardown con algunos cambios adicionales</p>
+se utiliza la data <code>CarreraLuz2022</code> contenida en
+<code>paqueteMET</code> y se describen los siguientes pasos utilizando
+el lenguaje <code>Rmardown</code> con algunos cambios adicionales.</p>
 <p></br></br></p>
 <div id="paso-1" class="section level2">
 <h2><span style="color:#FF7F00"> <strong>Paso 1 :</strong></span></h2>
@@ -317,8 +317,8 @@ From Template  / Flex Dashboard themed with {bslib}
 formato</strong></span></h3>
 <p>El formato permite cambiar los colores que por defecto trae la
 plantilla y ajustarlos a una paleta especial de colores. También se
-puede cambiar la orientación del tablero de columnas por defecto a filas
-y ajustar los títulos</p>
+pueden cambiar; la orientación del tablero de columnas por defecto a
+filas y ajustar los títulos.</p>
 <ul>
 <li><code>Column {data-width=350}</code>: permite determinar el ancho de
 la columna</li>
@@ -338,8 +338,8 @@ permite construir cajas con indicadores</li>
 class="section level3">
 <h3><span style="color:#034a94"><strong>Incorporación de los elementos
 al tablero</strong></span></h3>
-<p>Se pueden agregar los gráficos en los bloque preestablecidos o crear
-nuevos según las necesidades y los indicadores más relevantes</p>
+<p>Se pueden agregar los gráficos en los bloques preestablecidos o crear
+nuevos según las necesidades y los indicadores más relevantes.</p>
 <p><img src="img/tableroZ.png" width="100%" style="display: block; margin: auto;" /></p>
 <p></br></br></p>
 </div>
@@ -354,12 +354,12 @@ nuevos según las necesidades y los indicadores más relevantes</p>
 <ul>
 <li><p>Tener instalado <strong>git</strong> en nuestro equipo</p></li>
 <li><p>Tener una cuenta abierta en <strong>GitHub</strong></p></li>
-<li><p>Crear un repositorio en <strong>GitHib</strong></p></li>
+<li><p>Crear un repositorio en <strong>GitHub</strong></p></li>
 <li><p>Clonar el repositorio en nuestro equipo</p></li>
 <li><p>Crear archivo <strong>Rmd</strong> con formato flexdashboard
-(pasis 1 a 4)</p></li>
-<li><p>Renderizarlo el archivo con <strong>Kinit</strong> (convertirlo
-en formato html)</p></li>
+(pasos 1 a 4)</p></li>
+<li><p>Renderizar el archivo con <strong>Kinit</strong> (convertirlo en
+formato html)</p></li>
 <li><p>Subirlo los archivos al repositorio de GitHub</p>
 <ul>
 <li><code>git add .</code></li>
@@ -368,19 +368,25 @@ en formato html)</p></li>
 </ul></li>
 </ul>
 <p></br></p>
-<p>Estos códigos se pueden ejecutar desde la consola</p>
-<p><img src="img/github.png" width="100%" style="display: block; margin: auto;" />
-O desde la ventana git de RStudio</p>
-<p><img src="img/git.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Estos códigos se pueden ejecutar desde el Menú de RStudio o desde la
+ventana git</p>
+<p>Termina de RStudio
+<img src="img/github.png" width="80%" style="display: block; margin: auto;" /></p>
+<p></br></p>
+<p>Ventana git + Commit : marcar los archivos a subir + Escribir el
+comentario en ventana <strong>Commit message</strong><br />
++ Dar clic en boton <strong>Push</strong>
+<img src="img/git.png" width="80%" style="display: block; margin: auto;" /></p>
 <p></br></p>
 <ul>
 <li><p>Publicar el tablero : Este paso requiere regresar al repositorio
 de github y en él configurar el repositorio como página web:</p>
 <ul>
 <li>Settings</li>
-<li>Pages .+ Branch : main , (root), Save . Se debe esperar unos
-momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al
-final el nombre del tablero por ejemplo :
+<li>Pages</li>
+<li>Branch : main , (root), Save . Se debe esperar unos momentos
+mientras se genera la URL. Cuando aparezca la URL, agregamos al final el
+nombre del tablero por ejemplo :
 <code>https://usuariogithub.github.io/nombrerepositorio/tablero.html</code></li>
 </ul></li>
 </ul>
