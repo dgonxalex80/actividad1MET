@@ -40,6 +40,7 @@ Con el fin de visualizar los pasos para la construcción de un tablero se utiliz
 ### <span style="color:#034a94">**Descargar e instalar los paquetes requeridos**</span>  
 
 <pre>
+install.packages("flexdashboard")  # instala paquete flexdashboard
 install.packages("devtools")  # instala paquete devtools
 devtools::install_github("dgonxalex80/paqueteMET") # descarga de paqueteMET
 library(paqueteMET)     # activar paqueteMET
