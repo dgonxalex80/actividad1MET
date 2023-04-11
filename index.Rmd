@@ -107,6 +107,14 @@ knitr::include_graphics("img/tableroZ.png")
 
 ### <span style="color:#034a94">**Publicación**</span>
 
+</br>
+
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/RStudio-git-github.png")
+```
+
+</br></br>
+
 #### Para su publicación es necesario :
 
 </br>
