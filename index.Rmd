@@ -93,7 +93,7 @@ knitr::include_graphics("img/tablero5.png")
 
 ### <span style="color:#034a94">**Incorporación de los elementos al tablero**</span>
 
-Se pueden agregar los gráficos en los bloques preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes.
+Se pueden agregar los gráficos en los bloques preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes. El tablero **debe contener un apartado donde se realice un analisis decriptivo** de los resultados encontrados.
 
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
