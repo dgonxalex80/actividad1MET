@@ -263,143 +263,93 @@ $(document).ready(function () {
 
 
 <p></br></br></p>
-<div id="creación-de-tablero" class="section level1">
-<h1><span style="color:#034a94"><strong>Creación de
-tablero</strong></span></h1>
-<p><img src="img/tableroZ.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Mediante este paquete <code>flexdashboard</code> se pueden construir
-tableros en formato html que se podrán colocar en github para
-visualización de los resultados de una investigación o estudio de
-datos.</p>
-<p></br></p>
-<p>Con el fin de visualizar los pasos para la construcción de un tablero
-se utiliza la data <code>CarreraLuz2022</code> contenida en
-<code>paqueteMET</code> y se describen los siguientes pasos utilizando
-el lenguaje <code>Rmardown</code> con algunos cambios adicionales.</p>
-<p></br></br></p>
-<div id="paso-1" class="section level2">
-<h2><span style="color:#FF7F00"> <strong>Paso 1 :</strong></span></h2>
-<div id="descargar-e-instalar-los-paquetes-requeridos"
-class="section level3">
-<h3><span style="color:#034a94"><strong>Descargar e instalar los
-paquetes requeridos</strong></span></h3>
-<pre>
-install.packages("flexdashboard")  # instala paquete flexdashboard
-install.packages("devtools")       # instala paquete devtools
-devtools::install_github("dgonxalex80/paqueteMET") # descarga de paqueteMET
-library(paqueteMET)                # activar paqueteMET
-
-data("CarreraLuz22")               # cargar la dataset
-
-install.packages("remotes")  
-remotes::install_github("rstudio/bslib")  # descarga paquete que contiene formato    
-</pre>
-<p></br></br></p>
-</div>
-</div>
-<div id="paso-2" class="section level2">
-<h2><span style="color:#FF7F00"> <strong>Paso 2 :</strong></span></h2>
-<div id="creación-de-la-plantilla-del-tablero" class="section level3">
-<h3><span style="color:#034a94"><strong>Creación de la plantilla del
-tablero</strong></span></h3>
-<pre>
-
-File / New File / R Markdown...     
-From Template  / Flex Dashboard themed with {bslib}
-
-</pre>
-<p><img src="img/tablero1.png" width="100%" style="display: block; margin: auto;" /></p>
-</div>
-</div>
-<div id="paso-3" class="section level2">
-<h2><span style="color:#FF7F00"> <strong>Paso 3 :</strong></span></h2>
-<div id="ajuste-del-formato" class="section level3">
-<h3><span style="color:#034a94"><strong>Ajuste del
-formato</strong></span></h3>
-<p>El formato permite cambiar los colores que por defecto trae la
-plantilla y ajustarlos a una paleta especial de colores. También se
-pueden cambiar; la orientación del tablero de columnas por defecto a
-filas y ajustar los títulos.</p>
-<ul>
-<li><code>Column {data-width=350}</code>: permite determinar el ancho de
-la columna</li>
-<li><code>Column {data-width=700 .tabset}</code>: permite construir
-páginas adicionales</li>
-<li><code>valueBox(value = variable,caption = "Titulo caja",icon = icono, color = código color)</code>:
-permite construir cajas con indicadores</li>
-</ul>
-<p><img src="img/tablero3.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><img src="img/tablero5.png" width="100%" style="display: block; margin: auto;" /></p>
-<p></br></br></p>
-</div>
-</div>
-<div id="paso-4" class="section level2">
-<h2><span style="color:#FF7F00"> <strong>Paso 4 :</strong></span></h2>
-<div id="incorporación-de-los-elementos-al-tablero"
-class="section level3">
-<h3><span style="color:#034a94"><strong>Incorporación de los elementos
-al tablero</strong></span></h3>
-<p>Se pueden agregar los gráficos en los bloques preestablecidos o crear
-nuevos según las necesidades y los indicadores más relevantes. El
-tablero <strong>debe contener un apartado donde se realice un analisis
-decriptivo</strong> de los resultados encontrados.</p>
-<p><img src="img/tableroZ.png" width="100%" style="display: block; margin: auto;" /></p>
-<p></br></br></p>
-</div>
-</div>
-<div id="paso-5" class="section level2">
-<h2><span style="color:#FF7F00"> <strong>Paso 5 :</strong></span></h2>
-<div id="publicación" class="section level3">
-<h3><span style="color:#034a94"><strong>Publicación</strong></span></h3>
-<p></br></p>
-<p><img src="img/RStudio-git-github.png" width="50%" style="display: block; margin: auto;" /></p>
-<p></br></br></p>
-<div id="para-su-publicación-es-necesario" class="section level4">
-<h4>Para su publicación es necesario :</h4>
-<p></br></p>
-<ul>
-<li><p>Tener instalado <strong>git</strong> en nuestro equipo</p></li>
-<li><p>Tener una cuenta abierta en <strong>GitHub</strong></p></li>
-<li><p>Crear un repositorio en <strong>GitHub</strong></p></li>
-<li><p>Clonar el repositorio en nuestro equipo</p></li>
-<li><p>Crear archivo <strong>Rmd</strong> con formato flexdashboard
-(pasos 1 a 4)</p></li>
-<li><p>Renderizar el archivo con <strong>Kinit</strong> (convertirlo en
-formato html)</p></li>
-<li><p>Subirlo los archivos al repositorio de GitHub</p>
-<ul>
-<li><code>git add .</code></li>
-<li><code>git commit -m "primer commit"</code></li>
-<li><code>git push</code></li>
-</ul></li>
-</ul>
-<p></br></p>
-<p>Estos códigos se pueden ejecutar desde el Menú de RStudio o desde la
-ventana git</p>
-<p>Termina de RStudio
-<img src="img/github.png" width="80%" style="display: block; margin: auto;" /></p>
-<p></br></p>
-<p>Ventana git + Commit : marcar los archivos a subir + Escribir el
-comentario en ventana <strong>Commit message</strong><br />
-+ Dar clic en boton <strong>Push</strong>
-<img src="img/git.png" width="80%" style="display: block; margin: auto;" /></p>
-<p></br></p>
-<ul>
-<li><p>Publicar el tablero : Este paso requiere regresar al repositorio
-de github y en él configurar el repositorio como página web:</p>
-<ul>
-<li>Settings</li>
-<li>Pages</li>
-<li>Branch : main , (root), Save . Se debe esperar unos momentos
-mientras se genera la URL. Cuando aparezca la URL, agregamos al final el
-nombre del tablero por ejemplo :
-<code>https://usuariogithub.github.io/nombrerepositorio/tablero.html</code></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+<!-- # <span style="color:#034a94">**Creación de tablero**</span>  -->
+<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/tableroZ.png") -->
+<!-- ``` -->
+<!-- Mediante este paquete   `flexdashboard` se pueden construir tableros en formato html que se podrán colocar en github para visualización de los resultados de una investigación o estudio de datos. -->
+<!-- </br> -->
+<!-- Con el fin de visualizar los pasos para la construcción de un tablero se utiliza la data `CarreraLuz2022` contenida en `paqueteMET` y se describen los siguientes pasos utilizando el lenguaje `Rmardown` con algunos cambios adicionales. -->
+<!-- </br></br> -->
+<!-- ## <span style="color:#FF7F00"> **Paso 1 :**</span> -->
+<!-- ### <span style="color:#034a94">**Descargar e instalar los paquetes requeridos**</span>   -->
+<!-- <pre> -->
+<!-- install.packages("flexdashboard")  # instala paquete flexdashboard -->
+<!-- install.packages("devtools")       # instala paquete devtools -->
+<!-- devtools::install_github("dgonxalex80/paqueteMET") # descarga de paqueteMET -->
+<!-- library(paqueteMET)                # activar paqueteMET -->
+<!-- data("CarreraLuz22")               # cargar la dataset -->
+<!-- install.packages("remotes")   -->
+<!-- remotes::install_github("rstudio/bslib")  # descarga paquete que contiene formato     -->
+<!-- </pre> -->
+<!-- </br></br> -->
+<!-- ## <span style="color:#FF7F00"> **Paso 2 :**</span> -->
+<!-- ### <span style="color:#034a94">**Creación de la plantilla del tablero**</span>  -->
+<!-- <pre> -->
+<!-- File / New File / R Markdown...      -->
+<!-- From Template  / Flex Dashboard themed with {bslib} -->
+<!-- </pre> -->
+<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/tablero1.png") -->
+<!-- ``` -->
+<!-- ## <span style="color:#FF7F00"> **Paso 3 :**</span> -->
+<!-- ### <span style="color:#034a94">**Ajuste del formato**</span>  -->
+<!-- El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores. También se pueden cambiar; la orientación del tablero de columnas por defecto a filas y ajustar los títulos. -->
+<!-- * `Column {data-width=350}`: permite determinar el ancho de la columna -->
+<!-- * `Column {data-width=700 .tabset}`: permite construir páginas adicionales -->
+<!-- * `valueBox(value = variable,caption = "Titulo caja",icon = icono, color = código color)`: permite construir cajas con indicadores   -->
+<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/tablero3.png") -->
+<!-- ``` -->
+<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/tablero5.png") -->
+<!-- ``` -->
+<!-- </br></br> -->
+<!-- ## <span style="color:#FF7F00"> **Paso 4 :**</span> -->
+<!-- ### <span style="color:#034a94">**Incorporación de los elementos al tablero**</span> -->
+<!-- Se pueden agregar los gráficos en los bloques preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes. El tablero **debe contener un apartado donde se realice un analisis decriptivo** de los resultados encontrados. -->
+<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/tableroZ.png") -->
+<!-- ``` -->
+<!-- </br></br> -->
+<!-- ## <span style="color:#FF7F00"> **Paso 5 :**</span> -->
+<!-- ### <span style="color:#034a94">**Publicación**</span> -->
+<!-- </br> -->
+<!-- ```{r, echo=FALSE, out.width="50%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/RStudio-git-github.png") -->
+<!-- ``` -->
+<!-- </br></br> -->
+<!-- #### Para su publicación es necesario : -->
+<!-- </br> -->
+<!-- * Tener instalado **git** en nuestro equipo -->
+<!-- * Tener una cuenta abierta en **GitHub** -->
+<!-- * Crear un repositorio en **GitHub** -->
+<!-- * Clonar el repositorio en nuestro equipo -->
+<!-- * Crear archivo **Rmd** con formato flexdashboard (pasos 1 a 4) -->
+<!-- * Renderizar  el archivo con  **Kinit** (convertirlo en formato html) -->
+<!-- * Subirlo los archivos al repositorio de GitHub  -->
+<!--   + `git add .` -->
+<!--   + `git commit -m "primer commit"` -->
+<!--   + `git push` -->
+<!-- </br> -->
+<!-- Estos códigos se pueden ejecutar desde el Menú de RStudio o desde la ventana git  -->
+<!-- Termina de RStudio -->
+<!-- ```{r, echo=FALSE, out.width="80%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/github.png") -->
+<!-- ``` -->
+<!-- </br> -->
+<!-- Ventana git -->
+<!--  + Commit : marcar los archivos a subir -->
+<!--  + Escribir el comentario en ventana **Commit message**   -->
+<!--  + Dar clic en boton **Push** -->
+<!-- ```{r, echo=FALSE, out.width="80%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/git.png") -->
+<!-- ```   -->
+<!-- </br>   -->
+<!-- * Publicar el tablero  : Este paso requiere regresar al repositorio de github y en él configurar el repositorio como página web:  -->
+<!--   * Settings -->
+<!--   * Pages -->
+<!--   * Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html` -->
 
 
 
