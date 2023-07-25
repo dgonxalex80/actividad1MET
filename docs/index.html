@@ -263,93 +263,86 @@ $(document).ready(function () {
 
 
 <p></br></br></p>
-<!-- # <span style="color:#034a94">**Creación de tablero**</span>  -->
-<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/tableroZ.png") -->
-<!-- ``` -->
-<!-- Mediante este paquete   `flexdashboard` se pueden construir tableros en formato html que se podrán colocar en github para visualización de los resultados de una investigación o estudio de datos. -->
-<!-- </br> -->
-<!-- Con el fin de visualizar los pasos para la construcción de un tablero se utiliza la data `CarreraLuz2022` contenida en `paqueteMET` y se describen los siguientes pasos utilizando el lenguaje `Rmardown` con algunos cambios adicionales. -->
-<!-- </br></br> -->
-<!-- ## <span style="color:#FF7F00"> **Paso 1 :**</span> -->
-<!-- ### <span style="color:#034a94">**Descargar e instalar los paquetes requeridos**</span>   -->
-<!-- <pre> -->
-<!-- install.packages("flexdashboard")  # instala paquete flexdashboard -->
-<!-- install.packages("devtools")       # instala paquete devtools -->
-<!-- devtools::install_github("dgonxalex80/paqueteMET") # descarga de paqueteMET -->
-<!-- library(paqueteMET)                # activar paqueteMET -->
-<!-- data("CarreraLuz22")               # cargar la dataset -->
-<!-- install.packages("remotes")   -->
-<!-- remotes::install_github("rstudio/bslib")  # descarga paquete que contiene formato     -->
-<!-- </pre> -->
-<!-- </br></br> -->
-<!-- ## <span style="color:#FF7F00"> **Paso 2 :**</span> -->
-<!-- ### <span style="color:#034a94">**Creación de la plantilla del tablero**</span>  -->
-<!-- <pre> -->
-<!-- File / New File / R Markdown...      -->
-<!-- From Template  / Flex Dashboard themed with {bslib} -->
-<!-- </pre> -->
-<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/tablero1.png") -->
-<!-- ``` -->
-<!-- ## <span style="color:#FF7F00"> **Paso 3 :**</span> -->
-<!-- ### <span style="color:#034a94">**Ajuste del formato**</span>  -->
-<!-- El formato permite cambiar los colores que por defecto trae la plantilla y ajustarlos a una paleta especial de colores. También se pueden cambiar; la orientación del tablero de columnas por defecto a filas y ajustar los títulos. -->
-<!-- * `Column {data-width=350}`: permite determinar el ancho de la columna -->
-<!-- * `Column {data-width=700 .tabset}`: permite construir páginas adicionales -->
-<!-- * `valueBox(value = variable,caption = "Titulo caja",icon = icono, color = código color)`: permite construir cajas con indicadores   -->
-<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/tablero3.png") -->
-<!-- ``` -->
-<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/tablero5.png") -->
-<!-- ``` -->
-<!-- </br></br> -->
-<!-- ## <span style="color:#FF7F00"> **Paso 4 :**</span> -->
-<!-- ### <span style="color:#034a94">**Incorporación de los elementos al tablero**</span> -->
-<!-- Se pueden agregar los gráficos en los bloques preestablecidos o crear nuevos según las necesidades y los indicadores más relevantes. El tablero **debe contener un apartado donde se realice un analisis decriptivo** de los resultados encontrados. -->
-<!-- ```{r, echo=FALSE, out.width="100%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/tableroZ.png") -->
-<!-- ``` -->
-<!-- </br></br> -->
-<!-- ## <span style="color:#FF7F00"> **Paso 5 :**</span> -->
-<!-- ### <span style="color:#034a94">**Publicación**</span> -->
-<!-- </br> -->
-<!-- ```{r, echo=FALSE, out.width="50%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/RStudio-git-github.png") -->
-<!-- ``` -->
-<!-- </br></br> -->
-<!-- #### Para su publicación es necesario : -->
-<!-- </br> -->
-<!-- * Tener instalado **git** en nuestro equipo -->
-<!-- * Tener una cuenta abierta en **GitHub** -->
-<!-- * Crear un repositorio en **GitHub** -->
-<!-- * Clonar el repositorio en nuestro equipo -->
-<!-- * Crear archivo **Rmd** con formato flexdashboard (pasos 1 a 4) -->
-<!-- * Renderizar  el archivo con  **Kinit** (convertirlo en formato html) -->
-<!-- * Subirlo los archivos al repositorio de GitHub  -->
-<!--   + `git add .` -->
-<!--   + `git commit -m "primer commit"` -->
-<!--   + `git push` -->
-<!-- </br> -->
-<!-- Estos códigos se pueden ejecutar desde el Menú de RStudio o desde la ventana git  -->
-<!-- Termina de RStudio -->
-<!-- ```{r, echo=FALSE, out.width="80%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/github.png") -->
-<!-- ``` -->
-<!-- </br> -->
-<!-- Ventana git -->
-<!--  + Commit : marcar los archivos a subir -->
-<!--  + Escribir el comentario en ventana **Commit message**   -->
-<!--  + Dar clic en boton **Push** -->
-<!-- ```{r, echo=FALSE, out.width="80%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/git.png") -->
-<!-- ```   -->
-<!-- </br>   -->
-<!-- * Publicar el tablero  : Este paso requiere regresar al repositorio de github y en él configurar el repositorio como página web:  -->
-<!--   * Settings -->
-<!--   * Pages -->
-<!--   * Branch : main , (root), Save . Se debe esperar unos momentos mientras se genera la URL. Cuando aparezca la URL, agregamos al final el nombre del tablero por ejemplo : `https://usuariogithub.github.io/nombrerepositorio/tablero.html` -->
+<div id="caso-análisis-del-mercado-inmobiliario-en-cali"
+class="section level1">
+<h1><span style="color:#034a94"> <strong>Caso : Análisis del mercado
+inmobiliario en Cali</strong></span></h1>
+<p></br></br></p>
+<p><img src="img/cali.png" width="80%" style="display: block; margin: auto;" /></p>
+<ceenter> <sub> Tomada de : <a
+href="https://pixabay.com/photos/city-church-architecture-cali-704322/"
+class="uri">https://pixabay.com/photos/city-church-architecture-cali-704322/</a>
+</sub>
+</center>
+<p><br/><br/></p>
+<p>La empresa B&amp;C (Bines y Casas) es una agencia de bienes raíces
+que opera en la ciudad de Cali, Colombia. La empresa fue fundada por
+Sandra Milena hace 10 años y actualmente cuenta con ocho agentes de
+bienes raíces.</p>
+<p></br></p>
+<p>El mercado de bienes raíces en Cali ha crecido significativamente en
+los últimos años, impulsado por el crecimiento de la población, la
+inversión extranjera directa y el desarrollo de nuevos proyectos
+inmobiliarios. En 2021, las ventas del sector en Cali llegaron a $6700
+millones y en 2022 a $6100 mil millones. Se espera que este sector
+continue creciendo durante los próximos años, permitiendo un desarrollo
+dinámico en la economía regional.</p>
+<p></br></p>
+<p>La empresa B&amp;C ha recogido información sobre viviendas que
+incluye información sobre el precio, la ubicación, las características y
+la venta de viviendas en Cali. Esta base de datos puede ser utilizada
+para realizar un informe estadístico que sería de gran interés para la
+empresa.</p>
+<p></br></p>
+<p>El informe estadístico podría proporcionar información sobre los
+siguientes temas:</p>
+<p>Precio de las viviendas en diferentes zonas de Cali. Tpo de viviendas
+más vendidas en Cali. Características más buscadas en las viviendas en
+Cali. Evolución del mercado de bienes raíces en Cali.</p>
+<p></br></p>
+<p>Esta información sería útil para la empresa B&amp;C para tomar
+decisiones sobre su negocio, tales como:</p>
+<ul>
+<li>Definir su nicho de mercado.</li>
+<li>Desarrollar estrategias de marketing.</li>
+<li>Establecer precios de venta.</li>
+<li>Ofrecer servicios personalizados a sus clientes.</li>
+</ul>
+<p></br></p>
+<p>La empresa solicita un análisis descriptivo de los datos, para
+identificar las tendencias y patrones en los datos. Finalmente, solicito
+que se redacte un informe que presente los resultados del análisis
+descriptivo de los datos.</p>
+<p></br></p>
+<p>El informe debe incluir los siguientes elementos:</p>
+<p>Introducción Objetivos Métodos Resultados Discusión Conclusiones</p>
+<p>El informe debe ser redactado en un lenguaje claro y conciso, y debe
+estar dirigido a los directivos de la empresa B&amp;C.</p>
+<p></br></br></p>
+<div id="solicitud-de-entrega-del-informe" class="section level2">
+<h2><span style="color:#034a94"> <strong>Solicitud de entrega del
+informe</strong></span></h2>
+<p>Solicito que el informe se entregue en la plataforma RPulse
+utilizando el formato Markdown.</p>
+<p>El informe debe estar organizado en un documento de texto único que
+contenga la introducción, los objetivos, los métodos, los resultados, la
+discusión y las conclusiones. Cada sección del informe debe estar
+numerada y debe tener un encabezado descriptivo.</p>
+<p></br></br></p>
+</div>
+<div id="entregable" class="section level2">
+<h2><span style="color:#034a94"> <strong>Entregable</strong></span></h2>
+<p>Enlace del informe en RPubs</p>
+<p></br></br></p>
+</div>
+<div id="datos" class="section level2">
+<h2><span style="color:#034a94"> <strong>Datos</strong></span></h2>
+<pre class="r"><code>install.packages(&quot;learnr&quot;) # solo una vez#·install.packages(&quot;devtools&quot;) # solo una vez
+devtools::install_github(&quot;dgonxalex80/paqueteMED&quot;)
+library(paqueteMED)
+data(vivienda_faltantes)</code></pre>
+</div>
+</div>
 
 
 
