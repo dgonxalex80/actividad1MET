@@ -27,13 +27,13 @@ c4 ="#686868"  # gris - color texto
 knitr::include_graphics("img/cali.png")
 ```
 
-<ceenter>
+<center>
 <sub> Tomada de : https://pixabay.com/photos/city-church-architecture-cali-704322/ </sub>
 </center>
 
 <br/><br/>
 
-La empresa B&C (Bines y Casas) es una agencia de bienes raíces que opera en la ciudad de Cali, Colombia. La empresa fue fundada por Sandra Milena hace 10 años y actualmente cuenta con ocho agentes de bienes raíces.
+La empresa **B&C** (Bines y Casas) es una agencia de bienes raíces que opera en la ciudad de Cali, Colombia. La empresa fue fundada por Sandra Milena hace 10 años y actualmente cuenta con ocho agentes de bienes raíces.
 
 </br>
 
@@ -76,7 +76,7 @@ Resultados
 Discusión
 Conclusiones
 
-El informe debe ser redactado en un lenguaje claro y conciso, y debe estar dirigido a los directivos de la empresa B&C.
+El informe debe ser redactado en un lenguaje claro y conciso, y debe estar dirigido a los directivos de la empresa **B&C**.
 
 </br></br>
 
