@@ -41,7 +41,7 @@ El mercado de bienes raíces en Cali ha crecido significativamente en los últim
 
 </br>
 
-La empresa B&C ha recogido información sobre viviendas que incluye información sobre el precio, la ubicación, las características y la venta de viviendas en Cali. Esta base de datos puede ser utilizada para realizar un informe estadístico que sería de gran interés para la empresa.
+La empresa **B&C** ha recogido información sobre viviendas que incluye información sobre el precio, la ubicación, las características y la venta de viviendas en Cali. Esta base de datos puede ser utilizada para realizar un informe estadístico que sería de gran interés para la empresa.
 
 </br>
 
@@ -54,7 +54,7 @@ Evolución del mercado de bienes raíces en Cali.
 
 </br>
 
-Esta información sería útil para la empresa B&C para tomar decisiones sobre su negocio, tales como:
+Esta información sería útil para la empresa **B&C** para tomar decisiones sobre su negocio, tales como:
 
 * Definir su nicho de mercado.
 * Desarrollar estrategias de marketing.
@@ -63,18 +63,19 @@ Esta información sería útil para la empresa B&C para tomar decisiones sobre s
 
 </br>
 
-La empresa solicita un análisis descriptivo de los datos, para identificar las tendencias y patrones en los datos. Finalmente, solicito que se redacte un informe que presente los resultados del análisis descriptivo de los datos.
+La empresa solicita un análisis descriptivo de los datos, para identificar las tendencias y patrones en los datos. 
 
 </br>
 
 El informe debe incluir los siguientes elementos:
 
-Introducción
-Objetivos
-Métodos
-Resultados
-Discusión
-Conclusiones
+* Introducción
+* Objetivos
+* Métodos
+* Resultados
+* Discusión
+* Conclusiones
+* Anexos
 
 El informe debe ser redactado en un lenguaje claro y conciso, y debe estar dirigido a los directivos de la empresa **B&C**.
 
@@ -91,7 +92,7 @@ El informe debe estar organizado en un documento de texto único que contenga la
 
 ## <span style="color:#034a94"> **Entregable**</span> 
 
-Enlace del informe en RPubs
+Enlace del informe en RPubs, copiado en Actividad1 del curso en Bs
 
 
 
