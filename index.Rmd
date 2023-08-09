@@ -101,9 +101,9 @@ Enlace del informe en RPubs, copiado en Actividad1 del curso en Bs
 ## <span style="color:#034a94"> **Datos**</span> 
 
 ```{r, eval=FALSE}
-install.packages("learnr") # solo una vez#·install.packages("devtools") # solo una vez
-devtools::install_github("dgonxalex80/paqueteMED")
-library(paqueteMED)
+install.packages("devtools") # solo una vez
+devtools::install_github("dgonxalex80/paqueteMET")
+library(paqueteMET)
 data(vivienda_faltantes)
 ```
 
