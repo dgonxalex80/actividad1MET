@@ -37,7 +37,7 @@ La empresa **B&C** (Bines y Casas) es una agencia de bienes raíces que opera en
 
 </br>
 
-El mercado de bienes raíces en Cali ha crecido significativamente en los últimos años, impulsado por el crecimiento de la población, la inversión extranjera directa y el desarrollo de nuevos proyectos inmobiliarios. En 2021, las ventas del sector en Cali llegaron a $6700 millones y en 2022 a $6100 mil millones. Se espera que este sector continue creciendo durante los próximos años, permitiendo un desarrollo dinámico en la economía regional.
+El mercado de bienes raíces en Cali ha crecido significativamente en los últimos años, impulsado por el crecimiento de la población, la inversión extranjera directa y el desarrollo de nuevos proyectos inmobiliarios. En 2022, las ventas del sector en Cali llegaron a $6700 millones y en 2023 a $6100 mil millones. Se espera que este sector continue creciendo durante los próximos años, permitiendo un desarrollo dinámico en la economía regional.
 
 </br>
 
@@ -47,10 +47,9 @@ La empresa **B&C** ha recogido información sobre viviendas que incluye informac
 
 El informe estadístico podría proporcionar información sobre los siguientes temas:
 
-Precio de las viviendas en diferentes zonas de Cali.
-Tpo de viviendas más vendidas en Cali.
-Características más buscadas en las viviendas en Cali.
-Evolución del mercado de bienes raíces en Cali.
+* Precio de las viviendas en diferentes zonas de Cali.
+* Tipo de viviendas más ofertadas en Cali.
+* Características más relevantes de la oferta de vivienda en Cali.
 
 </br>
 
@@ -63,7 +62,7 @@ Esta información sería útil para la empresa **B&C** para tomar decisiones sob
 
 </br>
 
-La empresa solicita un análisis descriptivo de los datos, para identificar las tendencias y patrones en los datos. 
+La empresa solicita un **análisis descriptivo** de los datos, para identificar las tendencias y patrones en los datos. 
 
 </br>
 
@@ -83,9 +82,9 @@ El informe debe ser redactado en un lenguaje claro y conciso, y debe estar dirig
 
 ## <span style="color:#034a94"> **Solicitud de entrega del informe**</span>
 
-Solicito que el informe se entregue en la plataforma RPulse utilizando el formato Markdown. 
+* Se debe entregar enlace de la plataforma RPuls que contenga el documento final, utilizando el formato Markdown. 
 
-El informe debe estar organizado en un documento de texto único que contenga la introducción, los objetivos, los métodos, los resultados, la discusión y las conclusiones. Cada sección del informe debe estar numerada y debe tener un encabezado descriptivo.
+* El informe debe estar organizado en un único documento que contenga la introducción, los objetivos, los métodos, los resultados, la discusión y las conclusiones. Cada sección del informe debe estar numerada y debe tener un encabezado descriptivo.
 
 
 </br></br>
@@ -102,10 +101,11 @@ Enlace del informe en RPubs, copiado en Actividad1 del curso en Bs
 
 ```{r, eval=FALSE}
 install.packages("devtools") # solo una vez
-devtools::install_github("dgonxalex80/paqueteMET")
-library(paqueteMET)
+devtools::install_github("dgonxalex80/paqueteMETODOS")
+library(paqueteMETODOS)
 data(vivienda_faltantes)
 ```
 
+</br></br>
 
 

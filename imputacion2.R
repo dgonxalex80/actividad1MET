@@ -5,7 +5,7 @@ library(mice)
 library(paqueteMET)
 # base de datos contenida en paqueteMET
 data(vivienda_faltantes) 
-
+#----------------------------------------------------------------------------
 
 # grafico para visualizar los datos faltantes
 md.pattern(vivienda_faltantes, rotate.names = TRUE) 
