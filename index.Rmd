@@ -99,11 +99,12 @@ Enlace del informe en RPubs, copiado en Actividad1 del curso en Bs
 
 ## <span style="color:#034a94"> **Datos**</span> 
 
-```{r, eval=FALSE}
-install.packages("devtools") # solo una vez
-devtools::install_github("dgonxalex80/paqueteMETODOS")
+```{r, warning=FALSE, message=FALSE}
+# install.packages("devtools") # solo una vez
+# devtools::install_github("dgonxalex80/paqueteMETODOS")
 library(paqueteMETODOS)
 data(vivienda_faltantes)
+head(vivienda_faltantes)
 ```
 
 </br></br>

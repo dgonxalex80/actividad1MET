@@ -351,10 +351,21 @@ Bs</p>
 </div>
 <div id="datos" class="section level2">
 <h2><span style="color:#034a94"> <strong>Datos</strong></span></h2>
-<pre class="r"><code>install.packages(&quot;devtools&quot;) # solo una vez
-devtools::install_github(&quot;dgonxalex80/paqueteMETODOS&quot;)
+<pre class="r"><code># install.packages(&quot;devtools&quot;) # solo una vez
+# devtools::install_github(&quot;dgonxalex80/paqueteMETODOS&quot;)
 library(paqueteMETODOS)
-data(vivienda_faltantes)</code></pre>
+data(vivienda_faltantes)
+head(vivienda_faltantes)</code></pre>
+<pre><code># A tibble: 6 × 13
+     id zona        piso estrato preciom areaconst parquea banios habitac tipo  
+  &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt; 
+1  8312 Zona Oeste     4       6    1300       318       2      4       2 Apart…
+2  8311 Zona Oeste     1       6     480       300       1      4       4 Casa  
+3  8307 Zona Oeste    NA       5    1200       800       4      7       5 Casa  
+4  8296 Zona Sur       2       3     220       150       1      2       4 Casa  
+5  8297 Zona Oeste    NA       5     330       112       2      4       3 Casa  
+6  8298 Zona Sur      NA       5    1350       390       8     10      10 Casa  
+# ℹ 3 more variables: barrio &lt;chr&gt;, longitud &lt;dbl&gt;, latitud &lt;dbl&gt;</code></pre>
 <p></br></br></p>
 </div>
 </div>
